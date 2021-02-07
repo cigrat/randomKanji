@@ -37,9 +37,10 @@ body {
 	user-select: none;
 }
 
-a { color: inherit; }
-
 .box:hover {
 	color: #009CB8;
 	background: black;
+	-webkit-background-clip: padding-box;
 }
+
+a { color: inherit; }
