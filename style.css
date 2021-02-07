@@ -1,8 +1,9 @@
 body {
-	margin: auto;
-	font-family: Yu Mincho;
+	font-family: Yu Mincho, MS Mincho, HiraMinProN-W3;
 	background-color: #012e56;
 }
+
+
 
 .centered {
 	position: absolute;
@@ -12,10 +13,16 @@ body {
 }
 
 .box {
-	background: #FFFAF0;
+	box-sizing: border-box;
+	background-clip: content-box; 
 	height: 1.2em;
 	width: 1.2em;
-	box-shadow: 10px 10px;
+	margin: 2vmax;
+	background: #FFFAF0;
+	padding: 4px;
+	box-shadow: 1vmax 1vmax;
+	border: 0.5vmax solid;
+	-webkit-background-clip: padding-box;
 }
 
 .character {
@@ -24,3 +31,18 @@ body {
 	justify-content: center;
 	font-size: 40vh;
 }
+
+.disable-select {
+	-webkit-user-select: none;  
+	-moz-user-select: none;    
+	-ms-user-select: none;      
+	user-select: none;
+}
+
+a { color: inherit; } 
+
+a:hover { 
+color: tomato; 
+filter: invert(100%);
+}
+
