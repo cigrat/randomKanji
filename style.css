@@ -14,14 +14,14 @@ body {
 
 .box {
 	box-sizing: border-box;
-	background-clip: content-box; 
+	background-clip: content-box;
 	height: 1.2em;
 	width: 1.2em;
 	margin: 2vmax;
 	background: #FFFAF0;
 	padding: 4px;
-	box-shadow: 1vmax 1vmax;
-	border: 0.5vmax solid;
+	box-shadow: 0.05em 0.05em;
+	border: 0.025em solid;
 	-webkit-background-clip: padding-box;
 }
 
@@ -33,16 +33,15 @@ body {
 }
 
 .disable-select {
-	-webkit-user-select: none;  
-	-moz-user-select: none;    
-	-ms-user-select: none;      
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 	user-select: none;
 }
 
-a { color: inherit; } 
+a { color: inherit; }
 
-a:hover { 
-color: tomato; 
+a:hover {
+color: tomato;
 filter: invert(100%);
 }
-
