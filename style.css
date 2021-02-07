@@ -1,9 +1,7 @@
 body {
-	font-family: Yu Mincho, MS Mincho, HiraMinProN-W3;
+	font-family: 'Yu Mincho','MS Mincho', serif;
 	background-color: #012e56;
 }
-
-
 
 .centered {
 	position: absolute;
@@ -41,7 +39,7 @@ body {
 
 a { color: inherit; }
 
-a:hover {
-color: tomato;
-filter: invert(100%);
+.box:hover {
+	color: #009CB8;
+	background: black;
 }
