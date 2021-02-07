@@ -17,10 +17,14 @@ function charUpdate(varID, set){
 	document.getElementById('link').href = 'http://www.romajidesu.com/kanji/'+currentChar;
 };
 
+function onload(varID, set){
+	charUpdate(varID, set);
+	document.getElementById('everything').style.background = (colors[getRandomInt (0, colors.length)]);
+}
 
 document.addEventListener('keydown', function(event) {
 	if (event.keyCode == 32) {
 		charUpdate('kanji', characters);
 		//charUpdate('kanji2', kana);
 	};
-}, true);	
+}, true);

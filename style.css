@@ -1,17 +1,56 @@
 body {
 	font-family: 'Yu Mincho','MS Mincho', serif;
 	background-color: #012e56;
+	margin: auto;
 }
-
 .centered {
 	position: absolute;
+	margin: auto;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
 
+.container {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+/*
+.instruct {
+	font-family: helvetica, sans-serif;
+	font-weight: 900;
+  font-size: 6.28em;
+  width: 200%;
+  transform: translate(-25%, -18%);
+  word-wrap: break-word;
+  line-height: 0.8;
+	word-spacing: 0.025em;
+	float: left;
+	color: #b4c7d900;
+	animation-name: slowFade;
+	animation-delay: 3s;
+	animation-duration: 15s;
+	animation-timing-function: cubic-bezier();
+
+}
+
+@keyframes slowFade {
+	0% {color: #b4c7d900;}
+  50% {color: #b4c7d9AA;}
+  100% {color: #b4c7d900;}
+}
+*/
+
 .box {
-	box-sizing: border-box;
+	//box-sizing: border-box;
 	background-clip: content-box;
 	height: 1.2em;
 	width: 1.2em;
@@ -19,7 +58,8 @@ body {
 	background: #FFFAF0;
 	padding: 4px;
 	box-shadow: 0.05em 0.05em;
-	border: 0.025em solid;
+	border: 0.033em solid;
+	overflow:hidden;
 	-webkit-background-clip: padding-box;
 }
 
@@ -38,9 +78,9 @@ body {
 }
 
 .box:hover {
-	color: #009CB8;
+	//color: #009CB8;
+	color: #FFFAF0;
 	background: black;
 	-webkit-background-clip: padding-box;
 }
-
 a { color: inherit; }

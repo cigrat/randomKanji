@@ -2,19 +2,22 @@
 <html>
 	<head>
 		<title>Kanji</title>
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="style.css">
 		<script src="const.js"></script>
 		<script src="script.js"></script>
 	</head>
-	<body onload = "charUpdate('kanji', characters)">
+	<body onload = "onload('kanji', characters)" id="everything">
+		<!--
+		<div class="container">
+			<div class="instruct disable-select">
+			</div>
+		</div> -->
 		<div class="centered">
 		 <a href="" target="_blank" rel="noopener" id="link">
 			<div class="character box disable-select" id="kanji" style="float: left;"></div>
 		 </a>
-		<!-- div class="character box disable-select" id="kanji2" style="float: right;">語</div>*/ -->
+		<!-- div class="character box disable-select" id="kanji2" style="float: right;">語</div> -->
 		</div>
 	</div>
-</body>
+	</body>
 </html

@@ -6,7 +6,6 @@ const colors = [
   "#F0FFFF",
   "#F5F5DC",
   "#FFE4C4",
-  "#000000",
   "#FFEBCD",
   "#0000FF",
   "#8A2BE2",
@@ -136,10 +135,10 @@ const colors = [
   "#40E0D0",
   "#EE82EE",
   "#F5DEB3",
-  "#FFFFFF",
   "#F5F5F5",
   "#FFFF00",
-  "#9ACD32"
+  "#9ACD32",
+  "#012e56"
 ];
 const kana = "あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをん"
 

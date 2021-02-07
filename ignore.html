@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>Kanji</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="shape"></div>
+      <div class="content">
+        SUPREMESUPREMESUPREMESUPREMESUPREMESUPREMESUPREMESUPREMESUPREMESUPREMESUPREMESUPREMESUPREMESUPREMESUPREMESUPREME
+      </div>
+    </div>
+  </body>
+<style>
+body {
+  font-family: helvetica;
+  background-color: #ccc;
+}
+#parallelogram {
+  width: 150px;
+  height: 100px;
+  transform: skew(20deg);
+  background: red;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  //margin: 0;
+  //overflow: hidden;
+}
+.content {
+  color: white;
+  font-size: 3.14em;
+  width: 200%;
+  transform: translate(-25%, -10%);
+  word-wrap: break-word;
+  line-height: 0.8;
+  -webkit-shape-outside: polygon(20% 10%, 85% 30%, 100% 100%, 0% 100%);
+  shape-outside: polygon(20% 10%, 85% 30%, 100% 100%, 0% 100%);
+}
+
+.shape {
+  width: 50%;
+  height: 80%;
+  -webkit-shape-outside: polygon(90% 0, 100% 0, 10% 100%, 0 100%);
+  shape-outside: polygon(90% 0, 100% 0, 10% 100%, 0 100%);
+  float: left;
+  /* the following three lines are only for demonstration purposes */
+  background: #444;
+  -webkit-clip-path: polygon(90% 0, 100% 0, 10% 100%, 0 100%);
+  clip-path: polygon(90% 0, 100% 0, 10% 100%, 0 100%);
+}
+</style>
+</html>
