@@ -1,3 +1,5 @@
+var char = characters;
+
 function invertHex(hex) {
 	return '#'+(Number(`0x1${hex}`) ^ 0xFFFFFF).toString(16).substr(1).toUpperCase()
 }
@@ -12,9 +14,9 @@ function getRandomInt(min, max) {
 function charUpdate(varID, set){
 	var elem = document.getElementById(varID);
 	var currentChar = set.charAt(getRandomInt (0, set.length));
-	//elem.style.color = colors[getRandomInt (0, colors.length)];
 	elem.innerHTML = currentChar;
 	document.getElementById('link').href = 'http://www.romajidesu.com/kanji/'+currentChar;
+	//elem.style.color = colors[getRandomInt (0, colors.length)];
 };
 
 function onload(varID, set){
@@ -35,14 +37,25 @@ function toggleFont() {
 	}
 }
 
+function toggleKana() {
+	if (char == characters) {
+		char = kana;
+	} else {
+		char = characters;
+	}
+	charUpdate('kanji', char);
+}
+
 document.addEventListener('keydown', function(event) {
 	if (event.keyCode == 32) {
-		charUpdate('kanji', characters);
+		charUpdate('kanji', char);
 		//charUpdate('kanji2', kana);
 	} else if (event.keyCode == 70){
 		toggleFont();
 	} else if (event.keyCode == 67){
 		changeBG();
+	} else if (event.keyCode == 75){
+		toggleKana();
 	}
 
 }, true);
