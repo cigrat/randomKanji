@@ -30,10 +30,10 @@ function changeBG () {
 
 function toggleFont() {
 	var x = document.getElementById('kanji');
-	if (x.style.fontFamily == "var(--sans)") {
-  	x.style.fontFamily = "var(--serif)";
+	if (x.style.fontFamily == "var(--serif)") {
+  	x.style.fontFamily = "var(--sans)";
   } else {
-    x.style.fontFamily = "var(--sans)";
+    x.style.fontFamily = "var(--serif)";
 	}
 }
 
