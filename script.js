@@ -15,7 +15,7 @@ function charUpdate(varID, set){
 	var elem = document.getElementById(varID);
 	var currentChar = set.charAt(getRandomInt (0, set.length));
 	elem.innerHTML = currentChar;
-	document.getElementById('link').href = 'http://www.romajidesu.com/kanji/'+currentChar;
+	document.getElementById('link').href = 'https://jisho.org/search/%23kanji%20'+currentChar;
 	//elem.style.color = colors[getRandomInt (0, colors.length)];
 };
 
