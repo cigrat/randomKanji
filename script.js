@@ -19,12 +19,30 @@ function charUpdate(varID, set){
 
 function onload(varID, set){
 	charUpdate(varID, set);
+	changeBG();
+}
+
+function changeBG () {
 	document.getElementById('everything').style.background = (colors[getRandomInt (0, colors.length)]);
+}
+
+function toggleFont() {
+	var x = document.getElementById('kanji');
+	if (x.style.fontFamily == "var(--sans)") {
+  	x.style.fontFamily = "var(--serif)";
+  } else {
+    x.style.fontFamily = "var(--sans)";
+	}
 }
 
 document.addEventListener('keydown', function(event) {
 	if (event.keyCode == 32) {
 		charUpdate('kanji', characters);
 		//charUpdate('kanji2', kana);
-	};
+	} else if (event.keyCode == 70){
+		toggleFont();
+	} else if (event.keyCode == 67){
+		changeBG();
+	}
+
 }, true);

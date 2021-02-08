@@ -1,5 +1,10 @@
+:root {
+  --sans: 'MS PGothic', Osaka, Arial, sans-serif;
+  --serif: 'Yu Mincho', 'MS Mincho', serif;
+}
+
 body {
-	font-family: 'Yu Mincho','MS Mincho', serif;
+	font-family: var(--sans);
 	background-color: #012e56;
 	margin: auto;
 }
@@ -50,8 +55,7 @@ body {
 */
 
 .box {
-	//box-sizing: border-box;
-	background-clip: content-box;
+	box-sizing: border-box;
 	height: 1.2em;
 	width: 1.2em;
 	margin: 2vmax;
